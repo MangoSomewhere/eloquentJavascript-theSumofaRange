@@ -7,16 +7,33 @@
 // add elements to the start of the array, object.shift(elementShifted);
 
 // Range Function 
-let a = 4;
-let b = 19;
-let c = 2;
+let a = 5;
+let b = 2;
+let c = -1;
+
 function range (a,b,c) {
     let result = [];
-    while (a<b) {
-        result.push(a);
-        a += c;
+    if (c<0) {
+        while (a>b) {
+            result.push(a);
+            a+= c ;
+        }
+        console.log(result);
     }
-    console.log(result);
-}
+    else {
+        while (a<b) {
+            result.push(a);
+            a += c;
+        }
+        console.log(result);
+        
 
+    }
+}        
+console.log(typeof(result));
 range (a,b,c);
+
+
+
+
+
