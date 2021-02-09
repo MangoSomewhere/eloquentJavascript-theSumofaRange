@@ -1,5 +1,5 @@
 // 'range 'function, takes two arguments, start & end, returns array containing all numbers from start to end.
-// 'sum' function, that takes array of numbers and returns the sum of these numbers 
+
 // Bonus: modiy range function to take an optional 3rd argument that indicates specfic increments
 
 // array
