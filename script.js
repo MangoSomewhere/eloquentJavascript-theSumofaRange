@@ -18,8 +18,7 @@ function range (a,b,c =1) {
             a += c;
         }
     }
-    console.log(typeof(result));
-    console.log(result.length);
+    return result;
     
 }        
 
@@ -35,3 +34,5 @@ function sum (result) {
 } 
 
 range(1,10);
+
+console.log(sum(range(1,10)));

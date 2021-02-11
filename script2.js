@@ -7,10 +7,10 @@ let range = [a, b, c] ;
 console.log(range);
 console.log(typeof(range));
 
-function sum (range) {
+function sum (x) {
     let total = 0;
-    for (count = 0; count < range.length; count ++) {
-        total += range[count];
+    for (count = 0; count < x.length; count ++) {
+        total += x[count];
     }
     console.log(total);
 
