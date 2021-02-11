@@ -1,39 +1,37 @@
+
 // 'range 'function, takes two arguments, start & end, returns array containing all numbers from start to end.
 
-// Bonus: modiy range function to take an optional 3rd argument that indicates specfic increments
 
-// array
-// add elements at the end of the array, object.push(elementPushed);
-// add elements to the start of the array, object.shift(elementShifted);
-
-// Range Function 
-let a = 5;
-let b = 2;
-let c = -1;
-
-function range (a,b,c) {
+function range (a,b,c =1) {
     let result = [];
+    result = new Array;
     if (c<0) {
-        while (a>b) {
+        while (a>=b) {
             result.push(a);
             a+= c ;
         }
-        console.log(result);
+        
     }
     else {
-        while (a<b) {
+        while (a<=b) {
             result.push(a);
             a += c;
         }
-        console.log(result);
-        
-
     }
+    console.log(typeof(result));
+    console.log(result.length);
+    
 }        
-console.log(typeof(result));
-range (a,b,c);
 
+// 'sum' function, that takes array of numbers and returns the sum of these numbers 
 
+function sum (result) {
+    let total = 0;
+    for (count = 0; count < result.length; count ++) {
+        total += result[count];
+    }
+    console.log(total);
 
+} 
 
-
+range(1,10);
